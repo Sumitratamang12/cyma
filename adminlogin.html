@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYMA</title>
+    <link rel="stylesheet" href="adminlogin.css">
+</head>
+<body>
+    <header>
+        <button id="nav-toggle">☰</button>
+        <h1>YMA INFO </h1>
+        
+    </header>
+
+    <nav id="side-nav">
+
+        <ul class="side-links">
+            <img src="asst secretary.jpg" alt="Profile Picture" class="profile-picture" style="width: 50%;border-radius: 50%;margin-left: 2.5rem;" >
+            <li><a href="login.html">Username</a></li>
+            <li><a href="headquarter.html">Headquarter</a></li>
+            <li><a href="#about">Sub Headquarter</a></li>
+            <li><a href="branch.html">Branch</a></li>
+            <li class="dropdown">
+                <a href="#contact" class="dropbtn">Edit</a>
+                <div class="dropdown-content">
+                    <a href="#add1">Add</a>
+                </div>
+            </li>
+            <li><a href="#contact">About</a></li>
+        </ul> 
+        <div id="sidebar-bottom">
+            <button class="logout-button" onclick="logout()">Log Out</button>
+        </div>
+     </nav>      
+
+</nav>
+
+
+    <main>
+         <div>
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button">Search</i></button>
+         </div>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home page of my awesome website. Here you can find information about various topics.</p>
+        </section>
+    </main>
+
+    <button id="post-button">+</button>
+
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Create a Post</h2>
+            <textarea id="title-content" placeholder="Title..."></textarea>
+            <textarea id="post-content" placeholder="Write your post here..."></textarea>
+            <input type="file" id="image-upload" accept="image/*">
+            <button id="submit-post">Post</button>
+        </div>
+    </div>
+
+    
+
+    <script src="adminlogin.js"></script>
+</body>
+</html>
