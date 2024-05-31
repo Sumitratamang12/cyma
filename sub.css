@@ -1,0 +1,74 @@
+.scroller-container {
+    display: flex;
+    align-items: center;
+    width: 120%; /* Increase the width of the container */
+    max-width: 1000px; /* Set a max-width to prevent it from becoming too large */
+    margin: 0 auto;
+}
+
+.wrapper {
+    font-family: 'Georgia', serif; /* Change font family */
+    font-size: 1.2em; /* Increase font size */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center; /* Center text horizontally */
+}
+
+.image-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 200%; /* Increase the width of the image container */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image-item {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    text-align: center;
+    overflow: hidden; /* Ensure the container hides the overflowing content */
+}
+
+.image-item img {
+    max-width: 300px; /* Increase the size of the images */
+    height: 200px;
+    display: block;
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.image-item:hover img {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.image-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* In style.css or sub.css */
+a {
+    text-decoration: none;
+    color: inherit; /* Inherits the color from its parent element */
+}
+
+.image-item h3 {
+    color: #000; /* Set the desired color for the text */
+}
+
+
+.scroll-btn {
+    background-color: #9bd300;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.scroll-btn:disabled {
+    background-color: #9bd300;
+    cursor: not-allowed;
+}
