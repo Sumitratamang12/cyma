@@ -1,0 +1,103 @@
+main {
+    padding: 20px;
+   
+}
+
+
+h2 {
+    margin-top: -30px;
+    font-family: 'Georgia', serif; /* Change font family */
+    font-size: 1.2em; 
+    padding: 0 10px 10px 10px; 
+    text-align: center; 
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns the search container to the left */
+    margin-bottom: 0px;
+    margin-left: 20px; /* Optional: Add margin to separate from the edge */
+}
+
+/* Search input styling */
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Search button styling */
+#search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: #26b439;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #008d5e;
+}
+
+/* Grid container and items styling */
+.grid-container {
+    display: flex;
+    flex-direction: column; /* Column layout for list view */
+    gap: 20px; /* Space between items */
+    max-height: 300px; /* Maximum height for the container */
+    max-width: 500px; /* Maximum width for the container */
+    padding: 10px; /* Optional: padding for the container */
+    background-color: #fff; /* Optional: background color for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.grid-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.grid-item h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.grid-item p {
+    margin: 10px 0 0 0;
+    color: #666;
+}
+
+#side-nav {
+    position: fixed;
+    left: -250px; /* Initially hide the navigation */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s; /* Smooth transition */
+}
+
+/* When the navigation is open, move it to the right */
+#side-nav.open {
+    left: 0;
+}
+
+/* Adjust the main content when the navigation is open */
+body.nav-open main {
+    margin-left: 250px;
+    transition: margin-left 0.3s; /* Smooth transition */
+}
+
+
+/* Hidden class to hide elements */
+.hidden {
+    display: none;
+}

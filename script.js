@@ -17,3 +17,9 @@ document.getElementById('search-button').addEventListener('click', function() {
         window.location.href = `search.html?q=${encodeURIComponent(query)}`;
     }
 });
+document.getElementById('nav-toggle').addEventListener('click', function() {
+    var nav = document.getElementById('side-nav');
+    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+});
+
+
